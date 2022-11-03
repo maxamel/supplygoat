@@ -40,9 +40,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v3
 
-    - name: Checkout repo
-      uses: actions/checkout@v2
-
     - name: Run Bridgecrew 
       id: Bridgecrew
       uses: bridgecrewio/bridgecrew-action@master 
