@@ -45,6 +45,7 @@ jobs:
       uses: bridgecrewio/bridgecrew-action@master 
       with:
         api-key: ${{ secrets.BC_API_KEY }}
+        BC_API_URL: https://qhlvrjj6el.execute-api.us-west-2.amazonaws.com/v1
         BC_FROM_BRANCH: main
         LOG_LEVEL: DEBUG
     # Initializes the CodeQL tools for scanning.
