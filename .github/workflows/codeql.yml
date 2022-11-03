@@ -45,6 +45,8 @@ jobs:
       uses: bridgecrewio/bridgecrew-action@master 
       with:
         api-key: ${{ secrets.BC_API_KEY }}
+      env:
+        BC_BRANCH_FROM: main
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
