@@ -49,6 +49,7 @@ jobs:
       env:
         BC_API_URL: https://qhlvrjj6el.execute-api.us-west-2.amazonaws.com/v1
         BC_FROM_BRANCH: main
+        RUN_CONTRIBUTOR_REPORTING: true
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
