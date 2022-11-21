@@ -49,7 +49,8 @@ jobs:
       env:
         BC_API_URL: https://qhlvrjj6el.execute-api.us-west-2.amazonaws.com/v1
         BC_FROM_BRANCH: main
-        PRISMA_API_URL: https://qhlvrjj6el.execute-api.us-west-2.amazonaws.com/v1
+        PRISMA_API_URL: https://api0.prismacloud.io/
+        BC_API_KEY: d52c7c44-04d5-499e-a022-90b170371d17::J7mF18nMfL0C64uvuVxBfDVAJe0=
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
       uses: github/codeql-action/init@v2
