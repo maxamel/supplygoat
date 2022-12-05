@@ -19,6 +19,8 @@ on:
     branches: [ "main" ]
   schedule:
     - cron: '25 22 * * 1'
+    
+permissions: write-all
 
 jobs:
   analyze:
