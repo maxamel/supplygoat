@@ -12,3 +12,5 @@ jobs:
       uses: bridgecrewio/checkov-action@master
       env:
         GITHUB_TOKEN: ${{secrets.THIS_IS_A_TEST_SECRET}}
+
+permissions: read-all
