@@ -19,6 +19,7 @@ jobs:
       image: node:14.16
       env:
         NODE_ENV: development
+        ACTIONS_ALLOW_UNSECURE_COMMANDS: true
       ports:
         - 80
       volumes:
