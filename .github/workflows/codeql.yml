@@ -49,7 +49,7 @@ jobs:
         api-key: ${{ secrets.BC_API_KEY }}
         log_level: DEBUG
       env:
-        BC_API_URL: https://qhlvrjj6el.execute-api.us-west-2.amazonaws.com/v1
+        PRISMA_API_URL: https://api3.prismacloud.io
         BC_FROM_BRANCH: main
     # Initializes the CodeQL tools for scanning.
     - name: Initialize CodeQL
