@@ -30,16 +30,16 @@ stages:
       - script: printenv
 
 jobs:
-- job: MyJob
-  container: ruby:2.6
+- job: Extreme
+  container: node:14.16
   pool:
     vmImage: windows-latest
   steps:
   - script: echo "Running in a container based on myorg/mycontainer:1.0"
-- job: MyJob2
+- job: Super
   container:
-    image: ruby:2.6
+    image: node:14.16
   pool:
     vmImage: ubuntu-latest
   steps:
-  - script: echo "Running in a container based on ruby:2.6"
+  - script: echo "Running in a container based on node:14.16"
