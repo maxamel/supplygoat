@@ -1,13 +1,13 @@
 trigger:
-- master
-​
+  - master
+
 resources:
   repositories:
   - repository: AzureDevOps
     type: git
     endpoint: AzureDevOps
     name: AzureDevOps/AzureDevOps
-​
+
 stages:
 - stage: Example
   jobs:
@@ -19,16 +19,16 @@ stages:
       - task: Docker@2
         inputs:
           container: postgres:14.2
-​
+
   - job: PassDigest
     pool:
       vmImage: 'ubuntu-18.04'
-​
+
     container: nginx:1.17
-​
+
     steps:
       - script: printenv
-​
+
 jobs:
 - job: MyJob
   container: ruby:2.6
