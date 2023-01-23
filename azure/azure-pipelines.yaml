@@ -31,7 +31,8 @@ stages:
 
 jobs:
 - job: Extreme
-  container: node:14.16
+  container: 
+    image: node:14.16
   pool:
     vmImage: windows-latest
   steps:
