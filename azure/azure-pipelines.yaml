@@ -32,14 +32,14 @@ stages:
 jobs:
 - job: Extreme
   container: 
-    image: node:14.16
+    image: node:14.13
   pool:
     vmImage: windows-latest
   steps:
   - script: echo "Running in a container based on myorg/mycontainer:1.0"
 - job: Super
   container:
-    image: node:14.16
+    image: node:14.12
   pool:
     vmImage: ubuntu-latest
   steps:
