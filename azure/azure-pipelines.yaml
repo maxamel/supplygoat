@@ -23,8 +23,8 @@ stages:
   - job: PassDigest
     pool:
       vmImage: 'ubuntu-18.04'
-
-    container: nginx:1.17
+    container:
+      image: node:14.16
 
     steps:
       - script: printenv
