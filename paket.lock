@@ -7,7 +7,6 @@ remote: https://api.nuget.org/v3/index.json
     jQuery (1.10.2) - restriction: >= net452
     jQuery.Validation (1.11.1) - restriction: >= net452
       jQuery (>= 1.4.4)
-    log4net (2.0.5) - restriction: >= net452
     Microsoft.ApplicationInsights (2.2) - restriction: >= net452
     Microsoft.ApplicationInsights.Agent.Intercept (2.0.6) - restriction: >= net452
     Microsoft.ApplicationInsights.DependencyCollector (2.2) - restriction: >= net452
