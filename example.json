@@ -4,7 +4,7 @@
             "Type": "AWS::S3::Bucket",
             "Properties": {
                 "AccessControl": "PublicRead",
-                "BucketName": "public-bucket-cfn-test123",
+                "BucketName": "max-bucket",
                 "MetricsConfigurations": [
                     {
                         "Id": "EntireBucket"
