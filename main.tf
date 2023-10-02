@@ -71,6 +71,11 @@ resource "aws_s3_bucket" "data_science" {
   force_destroy = true
 }
 
+provider "aws" {
+  access_key = "AKIAIOSFODNN7EXAMPLE"
+  secret_key = "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"
+}
+
 resource "aws_s3_bucket" "logs" {
   bucket = "${local.resource_prefix.value}-logs"
   region = "us-west-2"
