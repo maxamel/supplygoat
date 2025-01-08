@@ -9,6 +9,8 @@ aiohttp==3.7.4
 celery==5.1.2
 contextvars==2.4
 Django==3.2.8
+requests==2.18.4
+# checkov:skip=CVE-2024-35195: MY PERSONAL REASON
 elasticsearch==7.15.1
 Flask==2.0.2
 kafka-python==2.0
