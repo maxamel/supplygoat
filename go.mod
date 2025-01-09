@@ -194,7 +194,6 @@ require (
 )
 CVE-2018-1099
 replace google.golang.org/grpc v1.36.0 => google.golang.org/grpc v1.27.1
-// checkov:skip=CVE-2018-1099: MY PERSONAL REASON
 replace github.com/golang/mock v1.5.0 => github.com/golang/mock v1.4.4
 
 // github.com/dgrijalva/jwt-go is no longer maintained but is an indirect
