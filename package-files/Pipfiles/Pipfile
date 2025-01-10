@@ -5,7 +5,8 @@ name = "pypi"
 
 [packages]
 requests = "*"
-
+# checkov:skip=CVE-2018-25091:My cve reason
+# checkov:skip=certifi[BC_LIC_3]:My license reason
 
 [dev-packages]
 pytest = "*"
