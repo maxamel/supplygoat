@@ -4,7 +4,6 @@
   "version": "1.3.0",
   "description": "A tool to learn OWASP Top 10 for node.js developers",
   "main": "server.js",
-  "//": "checkov:skip=npm[BC_LIC_3]: MY LICENSE REASON",
   "dependencies": {
     "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.1",
@@ -60,6 +59,7 @@
     "zaproxy": "^0.2.0"
   },
   "//": "checkov:skip=CVE-2022-38900: MY CVE REASON",
+  "//": "checkov:skip=npm[BC_LIC_3]: MY LICENSE REASON",
   "repository": "https://github.com/OWASP/NodejsGoat",
   "license": "Apache 2.0"
 }
