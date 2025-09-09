@@ -1,0 +1,29 @@
+{
+    "name": "workos-inc/sso-example-applications",
+    "description": "An suite of PHP example applicatiosn demonstrating how to use the WorkOS PHP SDK",
+    "license": "MIT",
+    "//": [
+            "checkov:skip=CVE-2023-43655: test inline cve", 
+            "checkov:skip=paragonie/hidden-string[BC_LIC_3]:test inline"
+        ],
+    "authors": [
+        {
+            "name": "WorkOS",
+            "email": "support@workos.com"
+        }
+    ],
+    "require-dev": {
+    },
+    "scripts": {
+        "lint": "phplint --no-cache .",
+        "phpcs": "phpcs --standard=PSR12 .",
+        "phpcbf": "phpcbf --standard=PSR12 ."
+    },
+    "require": {
+        "workos/workos-php": "^3.0",
+        "composer/composer": "^2.0",
+        "squizlabs/php_codesniffer": "^3.5",
+        "overtrue/phplint": "^5.3",
+        "paragonie/hidden-string": "^1.0"
+    }
+}
