@@ -26,6 +26,7 @@ dependencies {
     compileOnly group: 'commons-logging', name: 'commons-logging', version: commonsLoggingVersion
 
     implementation 'org.apache.httpcomponents:httpclient:4.5.4'
+    implementation 'com.example.artifacts:max-artifact:1.0.0'
     implementation('com.fasterxml.jackson.core:jackson-databind:2.12.4') {
         force = true
     }
